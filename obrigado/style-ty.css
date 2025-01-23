@@ -1,11 +1,3 @@
-.thankYou{
-    position: relative;
-
-
-    width: 100%;
-
-
-}
 
 .stars{
     display: flex;
@@ -28,7 +20,7 @@ h1{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    animation: anima infinite ease-out;
+    animation: anima 5s infinite ease-out;
     animation-duration: calc(800s / var(--i));
 }
 
