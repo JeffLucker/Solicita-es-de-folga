@@ -1,0 +1,58 @@
+.thankYou{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(6, 166, 252, 0.486);
+}
+
+.star{
+    position: absolute;
+    left: calc(var(--size, 1) * 10px);
+    bottom: calc(var(--size, 1) * 15px);
+    height: 25px;
+    animation: flutuar 7s infinite ease-in-out, girar 7s infinite ease-in-out;
+   /* animation: girar 2s infinite; */
+}
+@keyframes girar {
+        0% {
+            transform: rotate(0deg) scale(0) translateY(0%);
+        }
+        50% {
+            transform: rotate(360deg) scale(1) translateY(-500%);
+        }
+        100% {
+            transform: rotate(720deg) scale(0) translateY(0%);
+        }
+    }
+
+.thankYou::before{
+    content: '';
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    animation: alargar 5s infinite ease-in-out;
+    border-radius: 15px;
+    transform: translateY(-20%); /* Ajusta para centralizar perfeitamente */
+    width: 30%; /* Ajuste para o comprimento desejado */
+    height: 10px; /* Define a espessura da linha */
+    background-color: white; /* Cor da linha */
+}
+
+@keyframes alargar {
+    0%{
+        left: 45%;
+        width: 30%;
+    }
+    50%{
+        left: 35%;
+        width: 40%;
+    }
+    100%{
+        left: 45%;
+        width: 30%;
+    }
+}
