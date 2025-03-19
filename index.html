@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicitações de folga das camareiras</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Regras para Solicitações de folga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="termoAceite/style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Regras para solicitações de folga</h1>
+        </header>
+        <section>
+            <h4>Leia com atenção e clique em aceitar no final</h4>
+        </section>
+        <ol>
+            <li>Cada camareira ou arrumador terá direito a um dia de folga na semana + todos os seus domingos do mês que são de direito!</li>
+            <li>
+                A solicitação de folga prioritária será colocada na escala caso seja atendido o critério 1.
+            </li>
+            <li>
+                As solicitações adicionais serão atendidadas somente se não comprometerem o item 1 e também não afetaram a estrutura da escala (mais camareiras folgando em um dia que a média, etc), por tanto não temos como dar garantia.
+            </li>
+            <li>
+                A disposição das folgas do domingo não poderá ser alterado, com exceção das meninas que estão voltando de férias.
+            </li>
+            <li>
+                O formulário pode ser preenchido até hoje (24/03) às 23:59
+            </li>
+        </ol>
+        <div class="aceitar">
+            <input id="aceito" type="checkbox"> Eu li e aceito todos os termos
+        </div>
 
-    <div id="h1">
-        <h1>Solicitações de folga para o mês de março - 2025!</h1>
+        <button onclick="Aceitar()">Prosseguir</button>
     </div>
-
-    <p style="background-image: url('fundo-2.jpeg');"></p>
     
-    <div class="formulario">
-    <form action="https://formsubmit.co/jeferson.silvatd12@gmail.com" method="POST">
-        <label for="name">Nome:</label>
-        <input type="text" placeholder="Insira o nome completo" name="name" required>
-        <br>
-        <label for="date">Data de aniversário:</label>
-        <input type="date"placeholder="Data de aniversário!" name="date">
-        <br>
-        <label for="number">Folga prioritária:</label>
-        <input type="number" min="1" max="31" placeholder="Digite uma data do mês" name="number">
-        <br>
-        <label for="text">Mais alguma informação?</label>
-        <input style="height: 80px;" type="name" min="2" placeholder="Observações adicionais" name="text">
-        <input type="hidden" name="_captcha" value="false">
-        <br>
-        <button style="padding: 15px;" type="submit">ENVIAR</button>
-        <input type="hidden" name="_next" value="https://delightful-pony-23b8e7.netlify.app/">
-   </form>
-</div>
 
-
-<footer style="margin: 50px; font-family: Arial, Helvetica, sans-serif;">Desenvolvimento Jeferson Costa &copy</footer>
-
+    <script src="termoAceite/script.js"></script>
 </body>
 </html>
